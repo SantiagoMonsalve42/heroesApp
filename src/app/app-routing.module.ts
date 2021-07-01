@@ -16,12 +16,12 @@ const routes: Routes=[
     canActivate:[AuthGuard]
   },
   {
-    path: '404',
+    path: 'index',
     component: ErrorPageComponent
   },
   {
     path: '**',
-    redirectTo:'404'
+    redirectTo:'index'
   }
 ]
 
