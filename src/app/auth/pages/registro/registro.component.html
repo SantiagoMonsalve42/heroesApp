@@ -1,1 +1,33 @@
-<p>registro works!</p>
+
+<mat-sidenav-container fullscreen>
+    <mat-card>
+        <mat-card-content>
+        <form >
+            <h2>Registro</h2>
+            <mat-form-field class="full-width-input">
+            <input  matInput 
+                    placeholder="usuario" 
+                    [(ngModel)]="auth.usuario"
+                    name="usuario"
+                    required> 
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+                <input  matInput 
+                        placeholder="email" 
+                        [(ngModel)]="auth.email"
+                        name="email"
+                        required> 
+                </mat-form-field >
+                
+                <button mat-raised-button 
+                        color="primary"
+                         (click)="crear()">Registrarse</button>
+                <span class="spacer"></span>
+                <button mat-button 
+                        routerLink="auth/login">Iniciar sesión</button>
+                
+        </form>
+        </mat-card-content>
+    </mat-card>
+</mat-sidenav-container>
+

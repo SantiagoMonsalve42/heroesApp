@@ -1,1 +1,22 @@
-<p>login works!</p>
+<mat-sidenav-container fullscreen>
+    <mat-card>
+        <mat-card-content>
+        <form >
+            <h2>Log In</h2>
+            <mat-form-field class="full-width-input">
+            <input  matInput 
+                    placeholder="ID" 
+                    [(ngModel)]="auth.id"
+                    name="id"
+                    required> 
+            </mat-form-field>
+            <button mat-raised-button 
+                    color="primary"
+                    (click)="login()">Iniciar sesión</button>
+            <button mat-button 
+                    routerLink="/auth/registro">Registro</button>
+        </form>
+        </mat-card-content>
+    </mat-card>
+</mat-sidenav-container>
+
