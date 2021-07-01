@@ -31,5 +31,19 @@ export class HeroesService {
     return this.http.get<heroe[]>(url);
   }
 
+  agregar(heroe: heroe): Observable<heroe>{
+    const url=this.baseUrl+"/heroes";
+    return this.http.post<heroe>(url,heroe);
+  }
+
+  editar(heroe: heroe): Observable<heroe>{
+    const url=this.baseUrl+"/heroes/"+heroe.id;
+    return this.http.put<heroe>(url,heroe);
+  }
+
+  eliminar(id: string): Observable<heroe>{
+    const url=this.baseUrl+"/heroes/"+id;
+    return this.http.delete<heroe>(url);
+  }
 }
 

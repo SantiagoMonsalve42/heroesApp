@@ -1,0 +1,16 @@
+<div>
+    <h1>¿Esta seguro de que desea borrar el registro?</h1>
+    <hr>
+    <p>Esta a punto de borrar a <strong>{{data.superhero}}</strong></p>
+    <br>
+    ¿Desea continuar?
+</div>
+<div fxLayout>
+    <button mat-button
+            (click)="cerrar()">
+            Cancelar</button>
+            <span class="spacer"></span>
+    <button mat-button
+            (click)="borrar()"
+            color="warn">Si, borrar!</button>
+</div>

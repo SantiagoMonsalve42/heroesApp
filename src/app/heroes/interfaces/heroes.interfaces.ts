@@ -8,6 +8,6 @@ export interface heroe{
     alt_image: string;
 }
 export enum Publisher{
-    DCComics =" DC Comics",
+    DCComics ="DC Comics",
     MarvelComics ="Marvel Comics"
 }
